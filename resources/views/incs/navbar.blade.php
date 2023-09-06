@@ -13,6 +13,18 @@
             <a class="nav-link active" aria-current="page" href="#">Link</a>
           </li>
         </ul>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          @if (AUTH::user())
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Déconnexion</a>
+            </li>
+          @else
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Connexion</a>
+            </li>
+          @endif
+          
+        </ul>
       </div>
     </div>
   </nav>
